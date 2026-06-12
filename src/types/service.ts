@@ -5,7 +5,7 @@ export interface Iservice {
     title: string;
     content: string;
     category: string;
-    slug: string;
     createdAt: string;
   }
+  
   

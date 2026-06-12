@@ -10,6 +10,7 @@ export interface ServiceItem {
 }
 
 export interface ProjectItem {
+  title: ReactNode;
   _id: string;
   id: string;
   image: string;

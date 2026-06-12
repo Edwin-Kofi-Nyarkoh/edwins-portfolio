@@ -41,7 +41,7 @@ const Footer: React.FC = () => {
         {/* Legal Links */}
         <div>
           <ul className="space-y-2">
-            <li><Link href="/youtube-terms" className={linkClass("/youtube-terms")}>YouTube Terms of Service</Link></li>
+            <li><Link href="/cert" className={linkClass("/youtube-terms")}>Certificates</Link></li>
           </ul>
         </div>
 

@@ -58,6 +58,9 @@ export default function ProjectSection({ limit }: ProjectSectionProps) {
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
+                 <h2 className="mb-2 text-lg font-bold text-neutral-950 dark:text-white">
+          {project.title}
+        </h2>
                 <p className="mb-4 line-clamp-3 text-sm leading-6 text-neutral-700 dark:text-neutral-300">
                   {project.description}
                 </p>

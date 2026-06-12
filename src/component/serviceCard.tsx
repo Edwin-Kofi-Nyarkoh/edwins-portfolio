@@ -2,7 +2,6 @@ import { Badge } from "@/component/ui/badge";
 import { Card, CardContent } from "@/component/ui/card";
 import { ServiceItem } from "@/lib/queries";
 import Image from "next/image";
-import Link from "next/link";
 
 const ServiceCard = ({ service }: { service: ServiceItem }) => {
   return (
@@ -27,12 +26,6 @@ const ServiceCard = ({ service }: { service: ServiceItem }) => {
           {service.content}
         </p>
 
-        <Link
-          href={`/service/${service.slug}`}
-          className="font-semibold text-yellow-700 hover:underline dark:text-yellow-400"
-        >
-          Read More
-        </Link>
       </CardContent>
     </Card>
   );
