@@ -1,103 +1,87 @@
+import BioSection from "@/component/bio";
+import ContactSection from "@/component/contactSection";
+import IntroSection from "@/component/introSection";
+import ServiceSection from "@/component/serviceSection";
+import { buttonVariants } from "@/component/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main>
+      <section className="bg-white pt-24 text-black transition-colors duration-300 dark:bg-neutral-950 dark:text-white">
+        <div className="mx-auto grid min-h-[calc(100vh-4rem)] max-w-6xl items-center gap-10 px-6 py-10 lg:grid-cols-[1.05fr_0.95fr]">
+          <div className="space-y-6">
+            <p className="text-sm font-bold uppercase tracking-[0.2em] text-yellow-700 dark:text-yellow-400">
+              Cloud security focused full-stack developer
+            </p>
+            <h1 className="max-w-3xl text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
+              I build secure web apps and cloud-ready systems.
+            </h1>
+            <p className="max-w-2xl text-base leading-8 text-neutral-700 dark:text-neutral-300 sm:text-lg">
+              I combine full-stack development with a growing cloud security
+              practice across AWS IAM, VPC, S3, CloudTrail, Prisma, Prowler
+              PostgreSQL, secure authentication, and practical web security
+              habits.
+            </p>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/contact"
+                className={buttonVariants({ size: "lg", className: "rounded-full" })}
+              >
+                Contact Me
+              </Link>
+              <Link
+                href="/project"
+                className={buttonVariants({
+                  variant: "outline",
+                  size: "lg",
+                  className: "rounded-full",
+                })}
+              >
+                View Projects
+              </Link>
+            </div>
+          </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <div className="relative min-h-[340px] overflow-hidden rounded-lg bg-neutral-100 shadow-2xl dark:bg-neutral-900 sm:min-h-[460px]">
             <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+              src="/image/mainLandingPage.jpg"
+              alt="Picture of myself (Edwin kofi Nyarkoh)"
+              fill
+              priority
+              className="object-cover object-center transition-transform duration-500 ease-out hover:scale-105"
+              sizes="(max-width: 1024px) 100vw, 45vw"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <IntroSection />
+
+      <section className="bg-white py-12 text-black dark:bg-neutral-950 dark:text-white">
+        <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6">
+          <h2 className="text-2xl font-bold">Featured Services</h2>
+          <Link href="/service" className="font-semibold text-yellow-700 hover:underline dark:text-yellow-400">
+            Browse services
+          </Link>
+        </div>
+        <ServiceSection limit={3} />
+      </section>
+
+      <section className="bg-white py-12 text-black dark:bg-neutral-950 dark:text-white">
+        <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6">
+          <h2 className="text-2xl font-bold">Selected Projects</h2>
+          <Link href="/project" className="font-semibold text-yellow-700 hover:underline dark:text-yellow-400">
+            Browse projects
+          </Link>
+        </div>
+        <BioSection />
+      </section>
+
+      <section className="bg-white px-4 pb-12 dark:bg-neutral-950">
+        <ContactSection />
+      </section>
+    </main>
   );
 }
