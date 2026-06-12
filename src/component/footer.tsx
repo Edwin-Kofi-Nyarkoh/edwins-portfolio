@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaYoutube, FaInstagram, FaTiktok, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaTiktok, FaLinkedin } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   const pathname = usePathname();
@@ -32,10 +32,8 @@ const Footer: React.FC = () => {
             <li><Link href="/about" className={linkClass("/about")}>About</Link></li>
             <li><Link href="/service" className={linkClass("/service")}>Services</Link></li>
             <li><Link href="/project" className={linkClass("/project")}>Projects</Link></li>
-            <li><Link href="/skill" className={linkClass("/skill")}>Skills & services</Link></li>
+            <li><Link href="/skill" className={linkClass("/skill")}>Skills</Link></li>
             <li><Link href="/blog" className={linkClass("/blog")}>Blog</Link></li>
-            <li><Link href="/kits" className={linkClass("/kits")}>Search</Link></li>
-            <li><Link href="/memberships" className={linkClass("/memberships")}>Login</Link></li>
             <li><Link href="/contact" className={linkClass("/contact")}>Contact Me</Link></li>
           </ul>
         </div>
@@ -43,26 +41,17 @@ const Footer: React.FC = () => {
         {/* Legal Links */}
         <div>
           <ul className="space-y-2">
-            <li><Link href="/skill" className={linkClass("/skill")}>Skills & services</Link></li>
-            <li><Link href="/terms" className={linkClass("/terms")}>Terms of use</Link></li>
-            <li><Link href="/privacy" className={linkClass("/privacy")}>Privacy policy</Link></li>
             <li><Link href="/youtube-terms" className={linkClass("/youtube-terms")}>YouTube Terms of Service</Link></li>
           </ul>
         </div>
 
         {/* Social Icons */}
         <div className="flex lg:justify-end lg:col-span-2 gap-4 text-yellow-600">
-          <FaYoutube size={28} className="hover:text-white transition-colors" />
-          <FaInstagram size={28} className="hover:text-white transition-colors" />
+          <FaLinkedin size={28} className="hover:text-white transition-colors" />
+          <FaGithub size={28} className="hover:text-white transition-colors" />
+          
           <FaTiktok size={28} className="hover:text-white transition-colors" />
-          <a
-            href="mailto:edwin.kofi.nyarkoh@gmail.com"
-            title="Send Email"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <FaEnvelope size={28} />
-          </a>
+        
         </div>
       </div>
     </footer>
