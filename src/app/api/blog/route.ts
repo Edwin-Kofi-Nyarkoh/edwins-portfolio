@@ -1,16 +1,22 @@
 import { prisma } from "@/lib/prisma";
 import { NextResponse } from "next/server";
+import { Prisma } from "@prisma/client";
+
+type Blog = Prisma.BlogGetPayload<object>;
 
 export async function GET() {
   try {
-    const blog = await prisma.blog.findMany({
+    const blogs = await prisma.blog.findMany({
       orderBy: { createdAt: "desc" },
     });
 
     return NextResponse.json(
       {
         message: "All data fetched",
-        data: blog.map((item) => ({ ...item, _id: item.id })),
+        data: blogs.map((item: Blog) => ({
+          ...item,
+          _id: item.id,
+        })),
       },
       { status: 200 }
     );
