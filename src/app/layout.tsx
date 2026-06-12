@@ -5,8 +5,8 @@ import MaintenanceAlert from "@/component/MaintenanceAlert";
 import "./globals.css";
 
 export const metadata = {
-  title: "My Portfolio",
-  description: "Built with Next.js and Tailwind CSS",
+  title: "Edwin Nyarkoh | Portfolio",
+  description: "Full-stack developer specializing in cloud and cybersecurity",
 };
 
 export default function RootLayout({
