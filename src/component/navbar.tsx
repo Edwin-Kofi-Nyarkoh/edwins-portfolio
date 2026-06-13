@@ -96,7 +96,7 @@ export default function Navbar() {
               {cvOpen && (
                 <div className="absolute right-0 mt-2 w-44 rounded-md bg-white shadow-lg ring-1 ring-black/10 dark:bg-neutral-900">
                   <a
-                    href="/cv.pdf"
+                    href="/Edwin_Kofi_Nyarkoh_CV.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-neutral-800"
@@ -105,7 +105,7 @@ export default function Navbar() {
                   </a>
 
                   <a
-                    href="/cv.pdf"
+                    href="/Edwin_Kofi_Nyarkoh_CV.pdf"
                     download
                     className="block px-4 py-2 text-sm hover:bg-gray-100 dark:hover:bg-neutral-800"
                   >

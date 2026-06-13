@@ -16,7 +16,7 @@ function ProjectGridSkeleton() {
       {[0, 1, 2].map((item) => (
         <Card key={item}>
           <CardContent>
-            <Skeleton className="mb-4 aspect-[4/3] w-full" />
+            <Skeleton className="mb-4 aspect-4/3 w-full" />
             <Skeleton className="mb-2 h-4 w-full" />
             <Skeleton className="mb-4 h-4 w-5/6" />
             <Skeleton className="h-4 w-24" />
@@ -49,7 +49,7 @@ export default function ProjectSection({ limit }: ProjectSectionProps) {
               className="bg-yellow-50 transition hover:-translate-y-1 hover:shadow-md dark:bg-neutral-900"
             >
               <CardContent>
-                <div className="relative mb-4 aspect-[4/3] w-full overflow-hidden rounded-md bg-neutral-100 dark:bg-neutral-800">
+                <div className="relative mb-4 aspect-4/3 w-full overflow-hidden rounded-md bg-neutral-100 dark:bg-neutral-800">
                   <Image
                     src={project.image}
                     alt="Project preview"

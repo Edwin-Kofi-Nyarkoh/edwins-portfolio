@@ -44,7 +44,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative min-h-[340px] overflow-hidden rounded-lg bg-neutral-100 shadow-2xl dark:bg-neutral-900 sm:min-h-[460px]">
+          <div className="relative min-h-85 overflow-hidden rounded-lg bg-neutral-100 shadow-2xl dark:bg-neutral-900 sm:min-h-115">
             <Image
               src="/image/mainLandingPage.jpg"
               alt="Picture of myself (Edwin kofi Nyarkoh)"

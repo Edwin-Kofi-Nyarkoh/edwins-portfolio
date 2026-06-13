@@ -24,7 +24,7 @@ export default function BioSection() {
 
           <h3 className="mt-8 font-bold">Download My CV</h3>
           <a
-            href="/cv.pdf"
+            href="/Edwin_Kofi_Nyarkoh_CV.pdf"
             download
             className="mt-2 inline-block font-semibold text-yellow-700 underline dark:text-yellow-400"
           >

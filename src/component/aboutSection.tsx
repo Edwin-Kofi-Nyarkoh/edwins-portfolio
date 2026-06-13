@@ -73,7 +73,7 @@ export default function AboutSection() {
     >
       <div className="mx-auto max-w-6xl space-y-10">
         <div className="grid items-center gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="relative min-h-[340px] overflow-hidden rounded-lg bg-neutral-100 shadow-lg dark:bg-neutral-900">
+          <div className="relative min-h-85 overflow-hidden rounded-lg bg-neutral-100 shadow-lg dark:bg-neutral-900">
             <Image
               src="/image/landingImage.jpg"
               alt="Developer workspace"
